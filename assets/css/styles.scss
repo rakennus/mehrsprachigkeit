@@ -1,0 +1,97 @@
+---
+---
+
+//local font import
+
+@font-face {
+    font-family: "Mulish";
+    src: url("/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf")
+        format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("/assets/fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf")
+        format("truetype");
+    font-style: italic;
+}
+
+:root {
+    --font-color: #33322f;
+    --less-important-font-color: #727272;
+    --contrast-font-color: #f0f0f0;
+    --highlight-color: #306fce;
+    --border-color: #c7c7c7;
+    --second-border-color: #c7c7c7;
+    --background-color: #dddddd;
+    --background-color-contrast: #ffffff;
+    --dark-border-color: #282828;
+    --slightly-transparent: #00000065;
+    --box-shadow-color: #b1b1b1;
+}
+
+[data-theme="dark"] {
+    --font-color: #ebebeb;
+    --less-important-font-color: #969696;
+    --border-color: #282828;
+    --second-border-color: #7a7a7a;
+    --background-color: #000000;
+    --background-color-contrast: #18181a;
+    --slightly-transparent: #85858565;
+    --box-shadow-color: #000000;
+}
+
+html {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+
+    color: var(--font-color);
+    font-family: "Mulish";
+    padding: 0 12px;
+
+    min-height: 100%;
+    box-shadow: 0px 0px 24px 0px #00000036;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 0;
+    background-color: var(--background-color);
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 12px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#fwg-homepage-link * {
+    color: #0b3464;
+    display: inline;
+    vertical-align: middle;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    padding: 8px 0;
+}
+
+#pie-chart {
+    width: 100%;
+}
