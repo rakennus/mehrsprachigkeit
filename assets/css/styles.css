@@ -90,3 +90,16 @@ p {
 #pie-chart {
     width: 100%;
 }
+
+ul li a {
+    text-decoration: underline;
+    color: #0b3464;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+ul {
+    padding: 0 0 20px 20px;
+}
