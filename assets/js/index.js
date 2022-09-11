@@ -56,7 +56,7 @@ function gameLoop(timeStamp) {
     if (multiplier > 1) {
         multiplier = 1;
     }
-    
+
     draw();
 
     // The loop function has reached it's end. Keep requesting new frames
@@ -77,7 +77,10 @@ function draw() {
     */
     currentAngle = -0.5 * Math.PI;
 
+    let num = 0;
+
     for (let object of results) {
+        num++;
         //calculating the angle the slice (portion) will take in the chart
         let portionAngle = multiplier * (object.value / totalNumberOfObjects) * 2 * Math.PI;
         //drawing an arc and a line to the center to differentiate the slice from the rest
@@ -86,7 +89,11 @@ function draw() {
         currentAngle += portionAngle;
         ctx.lineTo(canvas.width / 2, canvas.height / 2);
         //filling the slices with the corresponding mood's color
-        ctx.fillStyle = "#0b3464";
+        if (num % 2 == 0) {
+            ctx.fillStyle = "#0b3464";
+        } else {
+            ctx.fillStyle = "#0b2542";
+        }
         ctx.fill();
 
         var x = Math.cos(currentAngle - portionAngle / 2) * (canvas.height / 2 - margin) + canvas.width / 2;
