@@ -1,18 +1,13 @@
----
----
-
-//local font import
-
 @font-face {
     font-family: "Mulish";
-    src: url("/assets/fonts/Mulish/Mulish-VariableFont_wght.ttf")
+    src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf")
         format("truetype");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Mulish";
-    src: url("/assets/fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf")
+    src: url("../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf")
         format("truetype");
     font-style: italic;
 }
